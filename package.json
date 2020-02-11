@@ -1,0 +1,17 @@
+{
+  "name": "desafio02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/front-coder/bootcamp_desafio02.git",
+  "author": "front-coder <alex.mac.general@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "dev:debug": "nodemon --inspect src/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "sucrase": "^3.12.1"
+  }
+}
