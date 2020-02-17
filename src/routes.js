@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import UserController from './app/controlers/UserController';
+import SessionController from './app/controlers/SessionController';
 import RecipientController from './app/controlers/RecipientController';
 
 const routes = new Router();
@@ -20,6 +21,7 @@ routes.get('/', (req, res) => {
 
 // Users
 routes.post('/users', UserController.store);
+routes.post('/sessions', SessionController.store);
 
 // Recipients
 routes.post('/recipients', RecipientController.store);
