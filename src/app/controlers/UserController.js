@@ -19,6 +19,11 @@ class UserController {
 			admin,
 		});
 	}
+
+	async update(req, res) {
+		console.log('userId => ', req.userId);
+		return res.json({ ok: true });
+	}
 }
 
 export default new UserController();
